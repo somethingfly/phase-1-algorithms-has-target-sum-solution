@@ -1,17 +1,37 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  const object = {};
+  for (const element of array) {
+    if (object[target - element] == 1) {
+      return true
+    }
+    object[element] = 1;    
+  }
+  return false
 }
 
 /* 
   Write the Big O time complexity of your function here
+
+  linear.  O(n).  Same as I wrote in the last exercise.
+  Glad to see I came up with the nearly best solution, except didn't know about sets.
+
 */
 
 /* 
   Add your pseudocode here
+
+  Copy the code from last exercise.
+  Paste in here.
+  Still don't get what I'm supposed to be doing here.
+
 */
 
 /*
   Add written explanation of your solution here
+
+  See explanation from last explanation.  (However, wrote "another arary" when I should have said "object.")
+
 */
 
 // You can run `node index.js` to view these console logs
